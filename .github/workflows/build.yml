@@ -22,8 +22,15 @@ jobs:
         with:
           fetch-depth: 0
           
+      - name: Set up conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: ${{ matrix.python }}
+          channels: conda-forge
+          activate-environment: compas_cpp-dev
+          
       - name: Configure conda channels
-        shell: bash
+        shell: bash -el {0}
         run: |
           conda config --add channels defaults
           conda config --set channel_priority strict
