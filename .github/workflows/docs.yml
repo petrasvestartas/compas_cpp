@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: 3.9
           mamba-version: '*'
-          channels: conda-forge
+          channels: conda-forge,defaults
           activate-environment: "compas_cpp-dev"
           environment-file: environment.yml
           
