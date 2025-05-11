@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Latest",
+    "version": "latest",
+    "url": "https://github.com//compas_cpp/latest/"
+  },
+  {
+    "name": "0.1.2 (stable)",
+    "version": "0.1.2",
+    "url": "https://github.com//compas_cpp/0.1.2/"
+  }
+]
